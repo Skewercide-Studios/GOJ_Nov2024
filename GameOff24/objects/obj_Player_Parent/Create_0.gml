@@ -6,7 +6,7 @@ move_speed = 5;
 jumpheight = -10;
 
 //Game Stats
-grav = 5;
+grav = 1;
 didjump = false;
 diddubjump = false;
 diddash = false;

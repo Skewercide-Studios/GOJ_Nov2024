@@ -9,41 +9,62 @@ dash = keyboard_check_pressed(ord("S"));
 
 
 xtomove = xinput * move_speed;
-ytomove = yinput * jumpheight;
+ytomove = grav;
 
 
 
-
-if(xinput != 0 && yinput != 0)
+if(onground)
 {
-	
-	if(collision_point(x + xtomove, y, obj_Collision_Parent, false, true))
+	if(yinput)
 	{
-		xtomove = 0;
-		while(!collision_point(x + xinput, y, obj_Collision_Parent, false, true))
-		{
-			xtomove = xinput;
-			
-		};
+		ytomove = jumpheight;
+		
 	};
 	
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if(xinput != 0) //X Movement Collision
+{
 	
+	if(place_meeting(x + xtomove, y, obj_Collision_Parent))
+	{
+		
+		while(!place_meeting(x + sign(xtomove), y, obj_Collision_Parent))
+		{
+			x += sign(xtomove);
+			
+		};
+		
+		xtomove = 0; //DO NOT TOUCH, WILL BREAK	<--------
+		
+	};
+};
+
+
+if(place_meeting(x, y + ytomove, obj_Collision_Parent)) //Y Movement Collision
+{
+	while(!place_meeting(x, y + sign(ytomove), obj_Collision_Parent))
+	{
+		y += sign(ytomove);
+	};
 	
-	
-	
-
-
-	
-}
-
-
-
-
-
-
-
-
-
+	ytomove = 0; //DO NOT TOUCH, WILL BREAK	<--------
+};
 
 
 
