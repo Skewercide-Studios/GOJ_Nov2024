@@ -10,6 +10,7 @@ y_speed = 0; // jump SPEED [something per second]
 jump_time = 0;
 jump_time_max = 0.2; // [seconds] maximum time of speed application
 max_speed = 10; // [something per second]
+jump_count = 0;
 
 //Game Stats
 didjump = false;

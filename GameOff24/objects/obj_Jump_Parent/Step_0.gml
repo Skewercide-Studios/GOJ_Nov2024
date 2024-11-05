@@ -11,13 +11,20 @@ xtomove = xinput * move_speed;
 
 var _dt = delta_time / 1000000;
 
-if(onground)
+// double jump enabled, if player is on the upwards during the first jump
+var _can_doublejump =  (y_speed < 0) and (jump_count == 1);
+
+if(onground or _can_doublejump)
 {
 	y_speed = 0;
 	if(yinput)
 	{
+		if _can_doublejump {
+			show_debug_message("doublejump!!!");
+		}
 		onground = false;
 		jump_time = 0;
+		++jump_count;
 		is_jumping = true;
 		show_debug_message("jump !!!");
 	}
@@ -57,6 +64,7 @@ if(place_meeting(x, y + delta_y, obj_Collision_Parent)) //Y Movement Collision
 		delta_y /= 2;
 	}
 	show_debug_message("on_ground !!!");
+	jump_count = 0;
 	onground = true;
 	y += delta_y;
 	delta_y = 0;
@@ -66,7 +74,6 @@ if(xinput != 0)
 {
 	image_xscale = xinput;
 }
-show_debug_message("x: {0}, y: {1}, mouse_y: {2}, on_ground: {3}, delta_y: {4}, yspeed: {5} dt (ms): {6}", x, y, mouse_y, onground, delta_y, y_speed, _dt * 1000);
 
 x += xtomove;
 if ( not onground ) {
