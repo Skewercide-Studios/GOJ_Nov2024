@@ -23,8 +23,7 @@ yinput = 0; //Space
 dash = 0; //S
 dubjump = 0; //Space
 
-
-
+wallTiles = layer_tilemap_get_id("WallTiles");
 
 
 

@@ -54,10 +54,10 @@ if(dash)
 if(xinput != 0) //X Movement Collision
 {
 	
-	if(place_meeting(x + xtomove, y, obj_Collision_Parent))
+	if(place_meeting(x + xtomove, y, [obj_Collision_Parent,wallTiles]))
 	{
 		
-		while(!place_meeting(x + sign(xtomove), y, obj_Collision_Parent))
+		while(!place_meeting(x + sign(xtomove), y, [obj_Collision_Parent,wallTiles]))
 		{
 			x += sign(xtomove);
 			
@@ -69,9 +69,9 @@ if(xinput != 0) //X Movement Collision
 };
 
 
-if(place_meeting(x, y + ytomove, obj_Collision_Parent)) //Y Movement Collision
+if(place_meeting(x, y + ytomove, [obj_Collision_Parent,wallTiles])) //Y Movement Collision
 {
-	while(!place_meeting(x, y + sign(ytomove), obj_Collision_Parent))
+	while(!place_meeting(x, y + sign(ytomove), [obj_Collision_Parent,wallTiles]))
 	{
 		y += sign(ytomove);
 	};
@@ -91,7 +91,7 @@ x += xtomove;
 y += ytomove;
 
 
-if(place_meeting(x, y + 1, obj_Collision_Parent))
+if(place_meeting(x, y + 1, [obj_Collision_Parent,wallTiles]))
 {
 	onground = true;
 	didjump = false;
@@ -102,7 +102,7 @@ else
 	onground = false;
 };
 
-if(place_meeting(x + 1, y, obj_Collision_Parent) or place_meeting(x - 1, y, obj_Collision_Parent))
+if(place_meeting(x + 1, y, [obj_Collision_Parent,wallTiles]) or place_meeting(x - 1, y, [obj_Collision_Parent,wallTiles]))
 {
 	againstwall = true;
 }
