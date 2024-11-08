@@ -6,7 +6,7 @@
 grav = 100; // gravity FORCE [ something per second squared]
 move_speed = 5;
 jump_speed = -5*grav;
-y_speed = 0; // jump SPEED [something per second]
+y_speed = 1; // jump SPEED [something per second]
 jump_time = 0;
 jump_time_max = 0.2; // [seconds] maximum time of speed application
 max_speed = 5; // [something per second] // default 10

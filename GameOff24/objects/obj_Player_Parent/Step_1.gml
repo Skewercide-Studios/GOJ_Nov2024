@@ -5,28 +5,41 @@ xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 yinput = keyboard_check_pressed(vk_space);
 dash = keyboard_check_pressed(ord("S"));
 
-
+//if(againstwall)
+//{
+//	grav = grav/4;
+//}
+//else
+//{
+//	grav = macro_grav;
+//};
 
 
 xtomove = xinput * move_speed;
-ytomove = grav;
+ytomove = ytomove + grav;
 
 
 
-if(onground)
+if(onground or candoublejump or againstwall)
 {
 	if(yinput)
 	{
 		ytomove = jumpheight;
 		
+		if(didjump and candoublejump)
+		{
+			candoublejump = false;
+		};
+		
+		didjump = true;
 	};
 	
 };
 
-
-
-
-
+if(dash)
+{
+	xtomove += dash_distance * sign(xinput);
+};
 
 
 
@@ -74,9 +87,28 @@ if(xinput != 0)
 	image_xscale = xinput;
 };
 
-
 x += xtomove;
 y += ytomove;
 
 
+if(place_meeting(x, y + 1, obj_Collision_Parent))
+{
+	onground = true;
+	didjump = false;
+	candoublejump = true;
+}
+else
+{
+	onground = false;
+};
+
+if(place_meeting(x + 1, y, obj_Collision_Parent) or place_meeting(x - 1, y, obj_Collision_Parent))
+{
+	againstwall = true;
+}
+else
+{
+	againstwall = false;
+};
+show_debug_message(againstwall);
 
