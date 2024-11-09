@@ -20,6 +20,7 @@ ytomove = ytomove + grav;
 
 
 
+
 if(onground or candoublejump or againstwall)
 {
 	if(yinput)
@@ -40,10 +41,6 @@ if(dash)
 {
 	xtomove += dash_distance * sign(xinput);
 };
-
-
-
-
 
 
 
@@ -91,6 +88,9 @@ x += xtomove;
 y += ytomove;
 
 
+
+
+
 if(place_meeting(x, y + 1, array_collision))
 {
 	onground = true;
@@ -110,5 +110,5 @@ else
 {
 	againstwall = false;
 };
-show_debug_message(againstwall);
+
 

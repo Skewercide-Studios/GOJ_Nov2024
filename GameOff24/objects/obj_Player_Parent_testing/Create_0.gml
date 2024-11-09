@@ -27,4 +27,7 @@ dubjump = 0; //Space
 wallTiles = layer_tilemap_get_id("WallTiles");
 
 
-array_collision = [ obj_Collision_Parent, wallTiles ];
+
+
+
+array_collision = [ obj_Collision_Parent, wallTiles];
