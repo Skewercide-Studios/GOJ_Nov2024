@@ -5,7 +5,7 @@ xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 yinput = keyboard_check_pressed(vk_space);
 dash = keyboard_check_pressed(ord("S"));
 
-if(againstwall and ytomove > 0)
+if(againstwall and ytomove > 0 and xinput != 0)
 {
 	grav = wall_grav;
 }
@@ -50,7 +50,6 @@ if(dash)
 
 
 
-
 if(xinput != 0) //X Movement Collision
 {
 	
@@ -69,9 +68,9 @@ if(xinput != 0) //X Movement Collision
 };
 
 
-if(place_meeting(x, y + ytomove, array_collision)) //Y Movement Collision
+if(place_meeting(x + sign(xtomove), y + ytomove, array_collision)) //Y Movement Collision
 {
-	while(!place_meeting(x, y + sign(ytomove), array_collision))
+	while(!place_meeting(x + sign(xtomove), y + sign(ytomove), array_collision))
 	{
 		y += sign(ytomove);
 	};
@@ -84,12 +83,21 @@ if(place_meeting(x, y + ytomove, array_collision)) //Y Movement Collision
 
 if(xinput != 0)
 {
-	image_xscale = xinput;
+	if(xinput > 0)
+	{
+		sprite_index = right;
+	}
+	else
+	{
+		sprite_index = left;
+	};
 };
 
 x += xtomove;
 y += ytomove;
 
+
+//move_and_collide(xtomove, ytomove, array_collision);
 
 if(place_meeting(x, y + 1, array_collision))
 {
@@ -110,5 +118,5 @@ else
 {
 	againstwall = false;
 };
-show_debug_message(againstwall);
+
 
