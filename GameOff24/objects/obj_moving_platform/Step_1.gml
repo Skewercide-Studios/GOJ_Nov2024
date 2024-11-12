@@ -48,14 +48,6 @@ if(Vertical)
 
 
 
-
-
-
-
-
-
-
-
 		
 	};
 
@@ -65,16 +57,49 @@ if(Vertical)
 if(Horizontal)
 {
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	switch state
+	{
+		case "right":
+			
+			if(x >= maxmoveright)
+			{		
+				state = "left";
+				break;	
+			};
+			
+			var o_obj = instance_place(x, y - 1, obj_Player_Parent);
+			with o_obj
+			
+			{
+				x += other.move_speed;
+			};
+			
+			x += move_speed;
+			
+		break;
+		
+		
+		case "left":
+		
+			if(x <= maxmoveleft)
+			{
+				state = "right";
+				break;
+			};
+			
+			var o_obj_2 = instance_place(x, y - 1, obj_Player_Parent);
+			with o_obj_2
+			
+			{
+				x -= other.move_speed;
+			};
+			
+			x -= move_speed;
+		
+		break;
+
+	};
+
 };
 
 
