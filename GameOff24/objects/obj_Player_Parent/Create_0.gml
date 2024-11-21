@@ -17,6 +17,13 @@ xtomove = 0;
 ytomove = 0;
 onground = true;
 againstwall = false;
+canwallcling = true;
+didwallcling = false;
+freeze = false;
+freeze_y = false;
+freeze_x = false;
+grav_on = true;
+
 
 //Controls
 xinput = 0; //A or D
@@ -29,6 +36,6 @@ test = layer_tilemap_get_id("ts_test");
 
 array_collision = [ obj_Collision_Parent, wallTiles ];
 
-right = spr_test_player;
-left = spr_test_player_1;
+right = spr_player_idle_right;
+left = spr_player_idle_left;
 

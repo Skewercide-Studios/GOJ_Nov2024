@@ -12,8 +12,13 @@ maxmovedown = starty + maxydistance;
 maxmoveup = starty - maxydistance;
 maxmoveleft = startx - maxxdistance;
 maxmoveright = startx + maxxdistance;
+pontop = false;
 
 maxditancetoobj = 10;
+
+p_half_width = sprite_width/2;
+p_half_height = sprite_height/2;
+
 dir = choose(-1, 1);
 if(Vertical)
 {
