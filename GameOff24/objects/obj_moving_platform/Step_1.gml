@@ -87,15 +87,17 @@ if(Horizontal)
 			
 			// --- Collision ---
 			//Bottom Left, Top Right
-			if(collision_rectangle((x - p_half_width) + 1, y + p_half_height, (x + p_half_width) + 1, (y - p_half_height) - 1, obj_Player_Parent, false, true))
+			if(collision_rectangle((x - p_half_width) + 1, y + p_half_height, (x + p_half_width) + 1, (y - p_half_height), obj_Player_Parent, false, true))
 			{
 				if(obj_Player_Parent.x > (x + p_half_width)) //Player is to the Right of platform
 				{
-					//obj_Player_Parent.x += move_speed + 1;
+					obj_Player_Parent.x += move_speed;
+					obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.x < (x - p_half_width)) //Player is to the Left of platform
 				{
-					
+					obj_Player_Parent.x -= move_speed;
+					obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.y < (y - p_half_height)) //Player is Above the platform
 				{
@@ -103,6 +105,7 @@ if(Horizontal)
 					
 				};
 					
+				
 			}
 			else
 			{
@@ -130,15 +133,17 @@ if(Horizontal)
 			
 			// --- Collision ---
 			//Bottom Left, Top Right
-			if(collision_rectangle((x - p_half_width) + 1, y + p_half_height, (x + p_half_width) + 1, (y - p_half_height) - 1, obj_Player_Parent, false, true))
+			if(collision_rectangle((x - p_half_width), y + p_half_height, (x + p_half_width), (y - p_half_height), obj_Player_Parent, false, true))
 			{
 				if(obj_Player_Parent.x > (x + p_half_width)) //Player is to the Right of platform
 				{
-					
+					obj_Player_Parent.x += move_speed;
+					obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.x < (x - p_half_width)) //Player is to the Left of platform
 				{
-					//obj_Player_Parent.x -= move_speed - 1;
+					obj_Player_Parent.x -= move_speed;
+					obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.y < (y - p_half_height)) //Player is Above the platform
 				{

@@ -16,7 +16,41 @@ else
 {
 	grav = macro_grav;
 };
+if(place_meeting(x, y + 1, array_collision)) //Is On Ground **************
+{
 
+	onground = true;
+	didjump = false;
+	candoublejump = true;
+	//canwallcling = true;
+	//didwallcling = false;
+	if(xinput == 0)
+	{
+		state = "idle"
+	}
+	else
+	{
+		state = "walk";
+	};
+	
+}
+else
+{
+	onground = false;
+};
+
+if(place_meeting(x + 1, y, array_collision) or place_meeting(x - 1, y, array_collision))
+{
+	againstwall = true;
+}
+else
+{
+	againstwall = false;
+	//if(didwallcling)
+	//{
+	//	canwallcling = false;
+	//};
+};
 
 xtomove = xinput * move_speed;
 
@@ -30,15 +64,20 @@ if(onground or candoublejump or againstwall)
 {
 	if(yinput)
 	{
-		ytomove = jumpheight;
+		
 		
 		if(didjump and candoublejump)
 		{
 			candoublejump = false;
 			
+			ytomove = jumpheight;
 		};
+		if(!didjump)
+		{
 		
-		didjump = true;
+			didjump = true;
+			ytomove = jumpheight;
+		};
 	};
 	
 };
@@ -109,40 +148,7 @@ else
 
 //move_and_collide(xtomove, ytomove, array_collision);
 
-if(place_meeting(x, y + 1, array_collision)) //Is On Ground **************
-{
-	onground = true;
-	didjump = false;
-	candoublejump = true;
-	//canwallcling = true;
-	//didwallcling = false;
-	if(xinput == 0)
-	{
-		state = "idle"
-	}
-	else
-	{
-		state = "walk";
-	};
-	
-}
-else
-{
-	onground = false;
-};
 
-if(place_meeting(x + 1, y, array_collision) or place_meeting(x - 1, y, array_collision))
-{
-	againstwall = true;
-}
-else
-{
-	againstwall = false;
-	//if(didwallcling)
-	//{
-	//	canwallcling = false;
-	//};
-};
 
 
 
