@@ -1,4 +1,6 @@
 /// @description Movement
+previousstate = state;
+
 
 //Controls
 xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
@@ -33,6 +35,7 @@ if(onground or candoublejump or againstwall)
 		if(didjump and candoublejump)
 		{
 			candoublejump = false;
+			
 		};
 		
 		didjump = true;
@@ -100,31 +103,9 @@ else
 
 
 
-if(xinput != 0)
-{
-	if(xinput > 0)
-	{
-		sprite_index = right;
-	}
-	else
-	{
-		sprite_index = left;
-	};
-	//image_xscale = sign(xinput);
-};
 
-if(!freeze)
-{
-	if(!freeze_x)
-	{
-		
-		x += xtomove;
-	};
-	if(!freeze_y)
-	{
-		y += ytomove;
-	};
-};
+
+
 
 //move_and_collide(xtomove, ytomove, array_collision);
 
@@ -135,6 +116,15 @@ if(place_meeting(x, y + 1, array_collision)) //Is On Ground **************
 	candoublejump = true;
 	//canwallcling = true;
 	//didwallcling = false;
+	if(xinput == 0)
+	{
+		state = "idle"
+	}
+	else
+	{
+		state = "walk";
+	};
+	
 }
 else
 {
@@ -153,5 +143,39 @@ else
 	//	canwallcling = false;
 	//};
 };
+
+
+
+
+//State Stuff
+if(xinput != 0)
+{
+	idletimer = 0;
+	
+};
+if(idletimer >= longidletimermax)
+{
+	state = "longidle";
+	
+};
+if(yinput)
+{
+	if(!candoublejump)
+	{
+		state = "doublejump";
+		
+	};
+	state = "jump";
+	
+};
+
+
+
+
+
+
+
+
+
 
 

@@ -15,8 +15,24 @@ if(instance_exists(obj_Player_Parent))
 
 
 
+if(!freeze)
+{
+	if(!freeze_x)
+	{
+		
+		x += xtomove;
+	};
+	if(!freeze_y)
+	{
+		y += ytomove;
+	};
+};
 
 
+if(xinput != 0)
+{
+	image_xscale = sign(xinput);
+};
 
 
 
