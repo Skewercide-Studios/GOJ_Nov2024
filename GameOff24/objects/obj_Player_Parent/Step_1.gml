@@ -1,6 +1,9 @@
 /// @description Movement
 previousstate = state;
-
+if(freeze)
+{
+	exit;
+};
 
 //Controls
 xinput = keyboard_check(ord("D")) - keyboard_check(ord("A"));
