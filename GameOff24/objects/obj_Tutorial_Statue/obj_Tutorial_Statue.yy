@@ -1,11 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_Tutorial_Statue",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_Tutorial_Statue",
   "overriddenProperties":[],
@@ -13,7 +9,10 @@
     "name":"Text Box Popup",
     "path":"folders/Objects/Level Design/Text Box Popup.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Statue_Popup_Parent",
+    "path":"objects/obj_Statue_Popup_Parent/obj_Statue_Popup_Parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,9 +26,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"text_group","filters":[],"listItems":[],"multiselect":false,"name":"text_group","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"tutorial\"","varType":2,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

@@ -4,7 +4,7 @@
 dodrawbox = false;
 cur_string = 0;
 next_button = noone;
-cur_text_array = [];
+cur_text_array = [" "];
 text_to_draw = "null";
 
 global.array_text_tutorial = [
