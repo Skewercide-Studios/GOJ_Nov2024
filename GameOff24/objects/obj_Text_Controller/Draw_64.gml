@@ -15,6 +15,15 @@ if(dodrawbox)
 	scr_text_box(spr_text_box, spr_test_player); //Need to set Identifier
 	scr_text_align(5); //Numpad Alignment
 	draw_set_font(fnt_normal);
+	if(keyboard_check_pressed(vk_space))
+	{
+		if(instance_exists(obj_next_button))
+		{	
+			obj_next_button.image_index++;
+			alarm_set(1, 10);
+		};
+	
+	};
 	if(cur_string > array_length(cur_text_array) - 1)
 	{
 		cur_string = 0;

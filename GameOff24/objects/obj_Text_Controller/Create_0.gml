@@ -14,7 +14,10 @@ global.array_text_tutorial = [
 ];
 
 
-
+global.array_text_test = [
+	"blah blah",
+	"bloo, bloo"
+];
 
 
 

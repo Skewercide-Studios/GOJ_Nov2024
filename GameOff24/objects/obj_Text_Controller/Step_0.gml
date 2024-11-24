@@ -15,7 +15,7 @@ switch text_to_draw
 	
 	case "test 1":
 	
-	
+		cur_text_array = global.array_text_test;
 	
 	break;
 	
