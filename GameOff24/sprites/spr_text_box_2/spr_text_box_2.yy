@@ -46,7 +46,7 @@
   "origin":4,
   "parent":{
     "name":"Text Box",
-    "path":"folders/Sounds/Text Box.yy",
+    "path":"folders/Sprites/Text Box.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

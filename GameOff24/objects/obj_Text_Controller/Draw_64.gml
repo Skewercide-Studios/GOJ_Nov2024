@@ -1,5 +1,8 @@
 /// @description 
-
+if(!instance_exists(obj_Player_Parent))
+{
+	exit;
+};
 if(dodrawbox)
 {
 	obj_Player_Parent.freeze = true;
