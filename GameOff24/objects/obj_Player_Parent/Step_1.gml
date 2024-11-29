@@ -88,6 +88,8 @@ if(onground or candoublejump or againstwall)
 if(dash)
 {
 	xtomove += dash_distance * sign(xinput);
+	state = "dash";
+	
 };
 
 

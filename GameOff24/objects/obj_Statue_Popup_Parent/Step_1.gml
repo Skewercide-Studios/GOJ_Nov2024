@@ -15,3 +15,6 @@ if(player_nearby && keyboard_check_pressed(ord("E")))
 {
 	did_player_click = true;
 };
+
+
+

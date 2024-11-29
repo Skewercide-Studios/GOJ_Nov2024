@@ -91,13 +91,13 @@ if(Horizontal)
 			{
 				if(obj_Player_Parent.x > (x + p_half_width)) //Player is to the Right of platform
 				{
-					obj_Player_Parent.x += move_speed;
-					obj_Player_Parent.y += obj_Player_Parent.grav;
+				//	obj_Player_Parent.x += move_speed;
+					//obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.x < (x - p_half_width)) //Player is to the Left of platform
 				{
-					obj_Player_Parent.x -= move_speed;
-					obj_Player_Parent.y += obj_Player_Parent.grav;
+					//obj_Player_Parent.x -= move_speed;
+					//obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.y < (y - p_half_height)) //Player is Above the platform
 				{
@@ -137,13 +137,13 @@ if(Horizontal)
 			{
 				if(obj_Player_Parent.x > (x + p_half_width)) //Player is to the Right of platform
 				{
-					obj_Player_Parent.x += move_speed;
-					obj_Player_Parent.y += obj_Player_Parent.grav;
+					//obj_Player_Parent.x += move_speed;
+					//obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.x < (x - p_half_width)) //Player is to the Left of platform
 				{
-					obj_Player_Parent.x -= move_speed;
-					obj_Player_Parent.y += obj_Player_Parent.grav;
+					//obj_Player_Parent.x -= move_speed;
+					//obj_Player_Parent.y += obj_Player_Parent.grav;
 				};
 				if(obj_Player_Parent.y < (y - p_half_height)) //Player is Above the platform
 				{

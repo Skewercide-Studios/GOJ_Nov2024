@@ -19,6 +19,8 @@ maxditancetoobj = 10;
 p_half_width = sprite_width/2;
 p_half_height = sprite_height/2;
 
+//sprite_index = choose(spr_platform_1, spr_platform_2, spr_platform_3, spr_platform_4);
+sprite_index = spr_platform_1;
 dir = choose(-1, 1);
 if(Vertical)
 {

@@ -12,7 +12,7 @@ if(dodrawbox)
 		next_button = instance_create_layer(gui_center_width + 210, gui_text_box_y + 50, "HUD", obj_next_button);
 	};
 	
-	scr_text_box(spr_text_box, spr_test_player); //Need to set Identifier
+	scr_text_box(spr_text_box, person_talking); //Need to set Identifier
 	scr_text_align(5); //Numpad Alignment
 	draw_set_font(fnt_normal);
 	if(keyboard_check_pressed(vk_space))
@@ -26,6 +26,7 @@ if(dodrawbox)
 	};
 	if(cur_string > array_length(cur_text_array) - 1)
 	{
+		obj_Player_Parent.freeze = false;
 		cur_string = 0;
 		dodrawbox = false;
 		if(instance_exists(obj_next_button))
@@ -43,7 +44,7 @@ if(dodrawbox)
 }
 else
 {
-	obj_Player_Parent.freeze = false;
+	
 	
 };
 

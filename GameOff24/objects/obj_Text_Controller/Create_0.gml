@@ -6,6 +6,8 @@ cur_string = 0;
 next_button = noone;
 cur_text_array = [" "];
 text_to_draw = "null";
+person_talking = spr_p_head;
+
 
 global.array_text_tutorial = [
 	"Where am I?",
