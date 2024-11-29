@@ -45,7 +45,7 @@ if(keyboard_check_pressed(vk_escape) or close_window == true)
 			audio_pause_all();
 				
 			
-			//pmenu = layer_sequence_create("GUI", GUI_W/2, GUI_H/2, seq_pause_menu);
+			pmenu = layer_sequence_create("HUD", GUI_W/2, GUI_H/2, seq_pmenu);
 
 			
 			
@@ -72,10 +72,10 @@ if(keyboard_check_pressed(vk_escape) or close_window == true)
 			is_paused = false;
 			//dodrawmenu = false;
 			audio_resume_all();
-			//if(sequence_exists(seq_pause_menu))
-			//{
-			//	layer_sequence_destroy(pmenu);
-			//};
+			if(sequence_exists(seq_pmenu))
+			{
+				layer_sequence_destroy(pmenu);
+			};
 			if(surface_exists(pauseSurf))
 			{
 				surface_free(pauseSurf);

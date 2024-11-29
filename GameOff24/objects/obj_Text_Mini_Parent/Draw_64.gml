@@ -34,4 +34,3 @@ if(dodrawbox)
 	
 }
 
-show_debug_message(obj_Player_Parent.freeze);

@@ -3,7 +3,7 @@
 randomize();
 
 
-
+pmenu = 0;
 //Window
 htmlscale = 1;
 windowscale = 2;
