@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_platform_4",
-    "path":"sprites/spr_platform_4/spr_platform_4.yy",
+    "name":"spr_platform_2",
+    "path":"sprites/spr_platform_2/spr_platform_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.315442,
+  "duration":0.196032,
   "name":"snd_pop",
   "parent":{
     "name":"Sounds",
