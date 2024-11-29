@@ -1,15 +1,23 @@
 {
   "$GMObject":"",
   "%Name":"obj_tutorial",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_tutorial",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Text_Mini_Parent","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"propertyId":{"name":"Text","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"I wonder where this goes...?",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Text_Mini_Parent","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"propertyId":{"name":"identifier","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"resource":{"name":"spr_p_head","path":"sprites/spr_p_head/spr_p_head.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_p_head",},
+  ],
   "parent":{
     "name":"Tutorial",
     "path":"folders/Objects/Level Design/Text Box Popup/Statue/Tutorial.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Text_Mini_Parent",
+    "path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

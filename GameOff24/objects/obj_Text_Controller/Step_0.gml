@@ -19,6 +19,12 @@ switch text_to_draw
 	
 	break;
 	
+	case "tutorial gate":
+	
+		cur_text_array = global.array_text_tutorial_gate;
+		person_talking = spr_statue_info;
+		
+	break;
 	
 	
 	

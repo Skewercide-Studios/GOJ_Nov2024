@@ -12,7 +12,7 @@ if(dodrawbox)
 		next_button = instance_create_layer(gui_center_width + 210, gui_text_box_y + 50, "HUD", obj_next_button);
 	};
 	
-	scr_text_box(spr_text_box, spr_info); //Need to set Identifier
+	scr_text_box(spr_text_box, identifier); //Need to set Identifier
 	scr_text_align(5); //Numpad Alignment
 	draw_set_font(fnt_normal);
 	if(keyboard_check_pressed(vk_space)) //If player press Space

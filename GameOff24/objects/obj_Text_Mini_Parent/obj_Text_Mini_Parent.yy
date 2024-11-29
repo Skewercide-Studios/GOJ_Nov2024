@@ -32,6 +32,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"Text","filters":[],"listItems":[],"multiselect":false,"name":"Text","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Empty","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"identifier","filters":[],"listItems":[],"multiselect":false,"name":"identifier","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_info","path":"sprites/spr_info/spr_info.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_info","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

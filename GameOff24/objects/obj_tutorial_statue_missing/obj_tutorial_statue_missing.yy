@@ -1,10 +1,14 @@
 {
   "$GMObject":"",
   "%Name":"obj_tutorial_statue_missing",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_tutorial_statue_missing",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Statue_Popup_Parent","path":"objects/obj_Statue_Popup_Parent/obj_Statue_Popup_Parent.yy",},"propertyId":{"name":"text_group","path":"objects/obj_Statue_Popup_Parent/obj_Statue_Popup_Parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"tutorial gate",},
+  ],
   "parent":{
     "name":"Tutorial",
     "path":"folders/Objects/Level Design/Text Box Popup/Statue/Tutorial.yy",

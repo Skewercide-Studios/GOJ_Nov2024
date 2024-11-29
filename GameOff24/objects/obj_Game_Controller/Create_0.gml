@@ -27,4 +27,18 @@ close_window = false;
 
 
 
+global.has_statue_tutorial = false;
+global.has_statue_satyr = false;
+global.has_statue_dryad = false;
+global.has_statue_centaur = false;
+
+
+
+
+
+
+
+
+
+
 
