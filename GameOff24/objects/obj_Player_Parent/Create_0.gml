@@ -36,7 +36,7 @@ dash = 0; //S
 dubjump = 0; //Space
 
 wallTiles = layer_tilemap_get_id("WallTiles");
-test = layer_tilemap_get_id("ts_test");
+//test = layer_tilemap_get_id("ts_test");
 
 array_collision = [ obj_Collision_Parent, wallTiles ];
 
