@@ -49,7 +49,7 @@ switch state
 	
 		//no sprite yet
 		state = "fall";
-		audio_play_sound(snd_woosh, 10, false);
+		
 	
 	break;
 	

@@ -85,11 +85,11 @@ if(onground or candoublejump or againstwall)
 	
 };
 
-if(dash)
+if(dash && xinput != 0)
 {
 	xtomove += dash_distance * sign(xinput);
 	state = "dash";
-	
+	audio_play_sound(snd_woosh, 10, false);
 };
 
 
