@@ -27,7 +27,28 @@ switch text_to_draw
 	break;
 	
 	
+	case "statue centaur":
 	
+		cur_text_array = global.array_text_statue_centaur;
+		person_talking = spr_statue_info;
+	
+	break;
+	
+	case "statue dryad":
+		
+		cur_text_array = global.array_text_statue_dryad;
+		person_talking = spr_statue_info;
+	
+	
+	break;
+	
+	case "statue satyr":
+		
+		cur_text_array = global.array_text_statue_satyr;
+		person_talking = spr_statue_info;
+	
+	
+	break;
 	
 	
 	

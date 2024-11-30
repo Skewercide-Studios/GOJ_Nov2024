@@ -15,6 +15,7 @@ if(dodrawbox)
 	scr_text_box(spr_text_box, person_talking); //Need to set Identifier
 	scr_text_align(5); //Numpad Alignment
 	draw_set_font(fnt_normal);
+	
 	if(keyboard_check_pressed(vk_space))
 	{
 		if(instance_exists(obj_next_button))
@@ -36,6 +37,7 @@ if(dodrawbox)
 	}
 	else
 	{
+		
 		draw_text_ext(gui_center_width, gui_text_box_y, cur_text_array[cur_string], text_seperation, text_wrap_width);
 	};
 	
@@ -48,3 +50,4 @@ else
 	
 };
 
+draw_set_color(c_white);

@@ -1,8 +1,28 @@
 /// @description 
 
-if(statue.open = true)
+if(statue.solved)
 {
-	image_index += anim_speed;
+	
+	if(image_index != 5)
+	{
+		if(!audio_is_playing(snd_stone_grind))
+		{
+			audio_play_sound(snd_stone_grind, 10, false);
+		};
+		image_index += anim_speed;
+	}
+	else
+	{
+		if(audio_is_playing(snd_stone_grind))
+		{
+			audio_stop_sound(snd_stone_grind);
+		};
+		can_enter = true;
+		solved = false;
+		anim_speed = 0;
+		image_index = 5;
+	};
+	
 };
 
 
@@ -13,3 +33,6 @@ if(can_enter)
 		room_goto(connected_room);
 	};
 };
+
+
+

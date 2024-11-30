@@ -3,13 +3,15 @@ draw_self();
 
 if(can_enter)
 {
+	
+	draw_set_color(c_black);
 	scr_text_align(5);
-	draw_set_font(fnt_small);
+	draw_set_font(fnt_small_bold);
 	draw_set_alpha(.5);
-	draw_text(x, y + infooffset, "Press W");
+	draw_text(x, y + ((infooffset*2) + 5), "Press W");
 
 	
 };
 draw_set_alpha(1);
-
+draw_set_color(c_white);
 	

@@ -18,6 +18,8 @@ if(Vertical)
 	{
 		case "down":
 			
+			
+			
 			if(y >= maxmovedown)
 			{
 				

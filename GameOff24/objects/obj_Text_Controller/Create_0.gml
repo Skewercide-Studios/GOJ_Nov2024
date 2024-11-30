@@ -28,7 +28,24 @@ global.array_text_tutorial_gate = [
 ];
 
 
+global.array_text_statue_satyr = [
+	"Satyrs were the children of Pan.",
+	"They loved to play instruments and sing their praises to him.",
+	"It was their life mission to seek Pan out after he was rumored to be dead."
+	
+];
 
+global.array_text_statue_centaur = [
+	"The majestic and fearsome Centaur.",
+	"Mobility was their greatest weapon, along with their actual weapon of course.",
+	"This Centaur favored his short bow as he charged into the fray of battle."
+];
+
+global.array_text_statue_dryad = [
+	"The Dryads were the caretakers of the forest.",
+	"Their beauty unmatched in the mortal realm.",
+	"They looked to Pan to help protect their homelands."
+];
 
 
 

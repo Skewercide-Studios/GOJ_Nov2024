@@ -3,6 +3,6 @@ if(global.has_statue_tutorial && player_nearby && mouse_check_button_pressed(mb_
 {
 	sprite_index = spr_statue_tutorial_solved;
 	
-	
+	solved = true;
 	
 };

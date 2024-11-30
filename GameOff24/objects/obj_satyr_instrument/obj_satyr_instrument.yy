@@ -1,15 +1,23 @@
 {
   "$GMObject":"",
   "%Name":"obj_satyr_instrument",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_satyr_instrument",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Text_Mini_Parent","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"propertyId":{"name":"Text","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Huh, another lost item. I wonder if this belongs somewhere like the last one.",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Text_Mini_Parent","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"propertyId":{"name":"identifier","path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",},"resource":{"name":"spr_p_head","path":"sprites/spr_p_head/spr_p_head.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_p_head",},
+  ],
   "parent":{
     "name":"Satyr",
     "path":"folders/Objects/Level Design/Text Box Popup/Statue/Satyr.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Text_Mini_Parent",
+    "path":"objects/obj_Text_Mini_Parent/obj_Text_Mini_Parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

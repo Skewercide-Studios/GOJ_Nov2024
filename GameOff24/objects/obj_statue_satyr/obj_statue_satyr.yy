@@ -1,10 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_statue_satyr",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_statue_satyr",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_Statue_Popup_Parent","path":"objects/obj_Statue_Popup_Parent/obj_Statue_Popup_Parent.yy",},"propertyId":{"name":"text_group","path":"objects/obj_Statue_Popup_Parent/obj_Statue_Popup_Parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"statue satyr",},
+  ],
   "parent":{
     "name":"Satyr",
     "path":"folders/Objects/Level Design/Text Box Popup/Statue/Satyr.yy",

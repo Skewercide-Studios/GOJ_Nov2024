@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tutorial_statue_solved",
+  "%Name":"obj_door_outline",
   "eventList":[],
   "managed":true,
-  "name":"obj_tutorial_statue_solved",
+  "name":"obj_door_outline",
   "overriddenProperties":[],
   "parent":{
-    "name":"Statue",
-    "path":"folders/Objects/Level Design/Text Box Popup/Statue.yy",
+    "name":"Doors",
+    "path":"folders/Objects/Level Design/Doors.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_statue_tutorial_solved",
-    "path":"sprites/spr_statue_tutorial_solved/spr_statue_tutorial_solved.yy",
+    "name":"spr_door_outline",
+    "path":"sprites/spr_door_outline/spr_door_outline.yy",
   },
   "spriteMaskId":null,
   "visible":true,
