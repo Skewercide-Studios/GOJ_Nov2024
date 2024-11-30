@@ -48,6 +48,11 @@ global.array_text_statue_dryad = [
 ];
 
 
+global.array_text_pan = [
+	"Thank you for finding me my child.",
+	"It is time for you to carry on my legacy. Protect The Wilds.",
+	"Keep it a safe home for all who wander."
+];
 
 
 

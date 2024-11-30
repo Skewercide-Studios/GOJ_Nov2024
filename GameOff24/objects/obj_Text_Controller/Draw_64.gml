@@ -27,6 +27,10 @@ if(dodrawbox)
 	};
 	if(cur_string > array_length(cur_text_array) - 1)
 	{
+		if(cur_text_array == global.array_text_pan)
+		{
+			obj_pan.dofade = true;
+		};
 		obj_Player_Parent.freeze = false;
 		cur_string = 0;
 		dodrawbox = false;

@@ -26,7 +26,7 @@ if(statue.solved)
 };
 
 
-if(can_enter)
+if(player_nearby && can_enter)
 {
 	if(keyboard_check_pressed(ord("W")))
 	{

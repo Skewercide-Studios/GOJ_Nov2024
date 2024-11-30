@@ -50,7 +50,13 @@ switch text_to_draw
 	
 	break;
 	
+	case "pan":
+		
+		cur_text_array = global.array_text_pan;
+		person_talking = spr_pan_head;
 	
+	
+	break;
 	
 	
 };
