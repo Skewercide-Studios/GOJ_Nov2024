@@ -2,7 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
-if(solved)
+if(global.centaur_door_unlocked)
 {
 	sprite_index = spr_centaur_statue_solved;
 };
