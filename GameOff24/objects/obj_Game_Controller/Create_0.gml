@@ -31,12 +31,13 @@ global.has_statue_tutorial = false;
 global.has_statue_satyr = false;
 global.has_statue_dryad = false;
 global.has_statue_centaur = false;
+global.has_bow = false;
+global.has_arrow = false;
 
+prev_room = noone;
 
-
-
-
-
+music_timer = 0;
+music_max_timer = 18000; //frames, 5 minutes
 
 
 

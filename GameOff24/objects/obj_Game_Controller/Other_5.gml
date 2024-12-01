@@ -10,3 +10,4 @@ if(buffer_exists(pauseSurfBuffer))
 	buffer_delete(pauseSurfBuffer);
 };
 
+prev_room = room;
