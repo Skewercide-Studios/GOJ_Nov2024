@@ -37,9 +37,11 @@ global.has_arrow = false;
 prev_room = noone;
 
 music_timer = 0;
-music_max_timer = 18000; //frames, 5 minutes
+music_max_timer = 8000; //frames, 
 
 
-
+global.satyr_door_unlocked = false;
+global.dryad_door_unlocked = false;
+global.centaur_door_unlocked = false;
 
 

@@ -11,3 +11,10 @@ else
 {
 	player_nearby = false;
 };
+
+
+if(unlock)
+{
+	image_index = 5;
+	can_enter = true;
+};

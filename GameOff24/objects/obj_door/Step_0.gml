@@ -21,6 +21,7 @@ if(statue.solved)
 		solved = false;
 		anim_speed = 0;
 		image_index = 5;
+		event_user(1);
 	};
 	
 };
